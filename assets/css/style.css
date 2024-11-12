@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@layer mShadow, mGradientStroke;
+
+* {
+  font-family: Raleway;
+}
+
+body {
+  background-color: black;
+}
+
+h2 {
+  font-weight: bold;
+  color: #33a8db;
+  font-size: 32px;
+  letter-spacing: 19%;
+  line-height: auto;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+p {
+  color: white;
+}
+
+/* banner */
+.banner {
+  background-image: linear-gradient(
+      rgba(22, 23, 31, 0.6),
+      rgba(49, 168, 221, 0.2),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../images/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  height: 600px;
+  /* text-align: center; */
+  border-bottom: 1px solid #33a8db80;
+}
+.banner h1 {
+  background: -webkit-linear-gradient(#33a8db #1472b7);
+
+  text-transform: none;
+  color: #33a8db;
+  font-weight: 900;
+  color: transparent;
+
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  font-size: 32px;
+  paint-order: stroke fill;
+  text-shadow: 1px 1px 0px #33a8db, 0 0 20px blue, 0 0 25px darkblue;
+  transition: all 0.5s;
+}
+
+.banner .banner-content {
+  text-align: center;
+  width: 600px;
+  margin: auto;
+  color: white;
+}
+
+.banner .logo img {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.banner .logo {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 228px;
+  width: 228px;
+  margin: auto;
+  border-radius: 50%;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.banner p {
+  font-size: 20px;
+  margin: 16px 0 24px;
+}
+
+@layer mShadow {
+  .banner .banner-content button {
+    padding: 16px 32px;
+    background-color: transparent;
+    color: #33a8dd;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-image: linear-gradient(#3ba1cd, #1572b7);
+    border-image-slice: 10;
+
+    background: -webkit-linear-gradient(#33a8db #1472b7);
+
+    text-transform: uppercase;
+    color: #33a8db;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    font-size: 15px;
+    paint-order: stroke fill;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 12px blue,
+      0 0 25px darkblue;
+    transition: all 0.5s;
+  }
+
+  button {
+    font-variation-settings: "wght" 100, "ital" 1, "rota" 20;
+    text-shadow: 20px 20px 5px #7df5df, 15px 15px 5px #4df7d8,
+      22px 22px 5px #04e0f4, 31px 31px 5px #047cf4, 42px 42px 5px #02a88a;
+    animation: hithere 1s ease infinite;
+  }
+
+  button:hover {
+    cursor: pointer;
+    font-variation-settings: "wght" 50, "ital" 0, "rota" 0;
+    color: #33a8db;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    /* Text Stroke */
+    -webkit-text-stroke: 3px #33a8db;
+    /* font-weight: bolder; */
+    letter-spacing: 2px;
+    animation-play-state: paused;
+  }
+
+  @keyframes hithere {
+    30% {
+      transform: scale(1);
+    }
+
+    40%,
+    60% {
+      transform: rotate(-1deg) scale(1);
+    }
+
+    50% {
+      transform: rotate(0deg) scale(1);
+    }
+
+    70% {
+      transform: rotate(0deg) scale(1);
+    }
+
+    100% {
+      transform: scale(0);
+    }
+  }
+}
+
+/* seção */
+section {
+  margin: 100px auto;
+}
+
+#course-content {
+  width: 800px;
+  text-align: center;
+  /* margin: auto; */
+}
+
+#course-content h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #33a8db;
+  font-weight: bold;
+}
+
+#course-content .modules-list {
+  margin: 24px 0;
+}
+
+#course-content .modules-list .module {
+  color: white;
+  width: 500px;
+  border: 1px solid #33a8db;
+  background-color: #252525;
+  margin: 0 auto 24px;
+  padding: 16px;
+  border-radius: 100px;
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.7);
+}
+
+#course-content .modules-list .module span {
+  color: #33a8db;
+}
+
+#transform-world {
+  height: 560px;
+  background-size: cover;
+  background-image: url("../images/woman-code.png");
+  background-attachment: fixed;
+  border-top: 1px solid #33a8db80;
+  border-bottom: 1px solid #33a8db80;
+}
+
+#transform-world p {
+  text-transform: lowercase;
+  font-weight: 900;
+  font-size: 2.5rem;
+  max-width: 250px;
+  text-shadow: 3px 2px #33a8db;
+  padding: 200px;
+}
+
+#professional-challenges {
+  text-align: center;
+  width: 800px;
+}
+
+#professional-challenges h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+#professional-challenges img {
+  margin: 32px 0;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #33a8db80;
+  padding: 60px 0;
+  text-align: center;
+  background-image: linear-gradient(
+    rgba(50, 168, 219, 0),
+    rgba(50, 168, 219, 0.2)
+  );
+}
+
+footer a {
+  color: #33a8db;
+  font-weight: bold;
+  text-decoration: none;
+}
